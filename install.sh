@@ -45,7 +45,6 @@ EOL
 cd /tmp
 wget https://unicorn.drogon.net/wiringpi-2.46-1.deb
 sudo dpkg -i wiringpi-2.46-1.deb
-sudo -i
 sudo usermod -a -G gpio $USER
 sudo usermod -a -G gpio pi
 sudo npm install -g homebridge-gpio-device --unsafe-perm
@@ -55,3 +54,5 @@ sudo systemctl enable homebridge
 sudo systemctl start homebridge
 sudo systemctl enable homebridge-config-ui-x
 sudo systemctl start homebridge-config-ui-x
+sudo -i
+sudo usermod -a -G gpio pi
