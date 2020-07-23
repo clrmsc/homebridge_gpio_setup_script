@@ -1,0 +1,1 @@
+# homebridge_gpio_setup_script
